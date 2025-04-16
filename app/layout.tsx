@@ -13,7 +13,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "DevPortfolio | Creative Developer & Designer",
+  title: "DevPortfolio | Senior Full Stack Engineer",
   description:
     "Portfolio of a creative developer and designer specializing in building engaging digital experiences with modern web technologies.",
   keywords: ["developer", "designer", "portfolio", "web development", "frontend", "UI/UX", "React", "Next.js"],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.example.com/",
-    title: "DevPortfolio | Creative Developer & Designer",
+    title: "DevPortfolio | Senior Full Stack Engineer",
     description:
       "Portfolio of a creative developer and designer specializing in building engaging digital experiences with modern web technologies.",
     siteName: "DevPortfolio",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DevPortfolio | Creative Developer & Designer",
+    title: "DevPortfolio | Senior Full Stack Engineer",
     description:
       "Portfolio of a creative developer and designer specializing in building engaging digital experiences with modern web technologies.",
     creator: "@username",

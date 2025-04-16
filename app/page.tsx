@@ -4,7 +4,7 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ExternalLink, Github, Linkedin, Mail, Download } from "lucide-react"
+import { ArrowRight, ExternalLink, Github, Linkedin, Mail, Download, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
 import { ContactForm } from "@/components/contact-form"
@@ -47,8 +47,8 @@ export default function Home() {
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
-                <AnimatedText text="Creative Developer & Designer" />
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-center">
+                <AnimatedText text="Senior Full Stack Engineer" />
               </h1>
             </motion.div>
 
@@ -129,7 +129,7 @@ export default function Home() {
               transition={{ duration: 0.5 }}
               className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-md"
             >
-              <Image src="/placeholder.svg?height=1000&width=800" alt="Portrait photo" fill className="object-cover" />
+              <Image src="https://tvjrf8ogpgevtyum.public.blob.vercel-storage.com/New-account/843016322EntryLevelPythonDeveloper-gQx2sOsvMAPp9gSDbUN5KRH9nSzcB2.jpg" alt="Portrait photo" fill className="object-cover" />
             </motion.div>
 
             <div>
@@ -141,15 +141,10 @@ export default function Home() {
               >
                 <h3 className="text-2xl font-bold mb-6">My Journey</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  With over 5 years of experience in web development and design, I've worked on a variety of projects
-                  from small business websites to large-scale applications. My approach combines technical expertise
-                  with creative problem-solving to deliver solutions that not only look great but also perform
-                  exceptionally well.
+                As a Senior Full Stack Engineer with over 10 years of experience, I’ve led the development of scalable, high-performance applications across backend and frontend ecosystems. My backend expertise includes Python, TypeScript, and SQL, with hands-on experience in frameworks like FastAPI, Django, and Flask. On the frontend, I’ve delivered responsive and maintainable UIs using React, Next.js, and Vue.js.
                 </p>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  I'm passionate about creating accessible, user-friendly interfaces that provide seamless experiences
-                  across all devices. When I'm not coding, you can find me exploring new design trends, contributing to
-                  open-source projects, or experimenting with new technologies.
+                I’ve also integrated AI/ML models into production using TensorFlow, PyTorch, and Scikit-learn, and implemented MLOps pipelines with Kubeflow, MLflow, and Airflow. My background spans data engineering with Kafka, Spark, and Pandas, and deploying services on AWS and GCP with Docker and Kubernetes. I follow Agile, prioritize clean, test-driven code, and bring a collaborative mindset using Git, GitLab, and CI/CD tools. I’m passionate about solving complex problems and contributing to innovative, user-focused products.
                 </p>
               </motion.div>
 
@@ -183,7 +178,7 @@ export default function Home() {
               <div className="flex gap-4">
                 <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 400 }}>
                   <Button variant="outline" size="icon" asChild>
-                    <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <Link href="https://github.com/hunter-dev-3" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                       <Github className="h-5 w-5" />
                     </Link>
                   </Button>
@@ -300,7 +295,7 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="py-24 md:py-32 bg-primary/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w mx-auto text-center mb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -323,10 +318,25 @@ export default function Home() {
               </p>
             </motion.div>
 
-            <ProjectFilter />
+            <ProjectFilter projects={projects} />
+            <div className="mt-16 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5 }}
+            >
+              <Button asChild variant="outline" className="group">
+                <Link href="/projects" className="flex items-center">
+                  View All Projects
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </Button>
+            </motion.div>
+          </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <ProjectCard
                 key={project.id}
@@ -355,7 +365,7 @@ export default function Home() {
                 </Link>
               </Button>
             </motion.div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -542,6 +552,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start">
+                  <Phone className="h-5 w-5 mr-3 mt-1 text-primary" />
+                  <div>
+                    <h4 className="font-medium">Phone</h4>
+                    <p className="text-muted-foreground">+1 (703) 672-5700</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
                   <Linkedin className="h-5 w-5 mr-3 mt-1 text-primary" />
                   <div>
                     <h4 className="font-medium">LinkedIn</h4>
@@ -552,7 +569,7 @@ export default function Home() {
                   <Github className="h-5 w-5 mr-3 mt-1 text-primary" />
                   <div>
                     <h4 className="font-medium">GitHub</h4>
-                    <p className="text-muted-foreground">github.com/username</p>
+                    <p className="text-muted-foreground">https://github.com/hunter-dev-3</p>
                   </div>
                 </div>
               </div>

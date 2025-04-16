@@ -21,22 +21,30 @@ export const categorizedSkills = [
     ],
   },
   {
-    category: "Design",
+    category: "AI/ML",
     items: [
       {
-        name: "UI/UX Design",
+        name: "TensorFlow",
         percentage: 80,
       },
       {
-        name: "Figma / Adobe XD",
+        name: "PyTorch",
         percentage: 75,
       },
       {
-        name: "Animation / Motion",
-        percentage: 85,
+        name: "OpenCV",
+        percentage: 90,
       },
       {
-        name: "Responsive Design",
+        name: "Kubeflow",
+        percentage: 80,
+      },
+      {
+        name: "MLflow",
+        percentage: 95,
+      },
+      {
+        name: "Airflow",
         percentage: 95,
       },
     ],
@@ -45,19 +53,98 @@ export const categorizedSkills = [
     category: "Backend",
     items: [
       {
-        name: "Node.js",
+        name: "Python",
+        percentage: 90,
+      },
+      {
+        name: "Django",
+        percentage: 85,
+      },
+      {
+        name: "FastAPI",
+        percentage: 80,
+      },
+      {
+        name: "Flask",
+        percentage: 80,
+      },
+    ],
+  },
+  {
+    category: "Database",
+    items: [
+      {
+        name: "MySQL",
+        percentage: 90,
+      },
+      {
+        name: "PostgreSql",
+        percentage: 85,
+      },
+      {
+        name: "Mongo DB",
+        percentage: 80,
+      },
+      {
+        name: "Redis",
+        percentage: 80,
+      },
+      {
+        name: "SQLite",
+        percentage: 80,
+      },
+    ],
+  },
+  {
+    category: "Data",
+    items: [
+      {
+        name: "Pandas",
+        percentage: 85,
+      },
+      {
+        name: "NumPy",
+        percentage: 80,
+      },
+      {
+        name: "Matplotlib",
         percentage: 75,
       },
       {
-        name: "Express",
+        name: "Apache Kafka",
+        percentage: 60,
+      },
+    ],
+  },
+  {
+    category: "DevOps & Cloud",
+    items: [
+      {
+        name: "AWS (EC2, Lambda, SageMaker, S3, RDS),",
+        percentage: 85,
+      },
+      {
+        name: "GCP",
         percentage: 70,
       },
       {
-        name: "MongoDB",
-        percentage: 65,
+        name: "Docker",
+        percentage: 85,
       },
       {
-        name: "REST APIs",
+        name: "Kubernetes",
+        percentage: 75,
+      },
+      {
+        name: "Terraform",
+        percentage: 80,
+      },
+      {
+        name: "Jenkins",
+        percentage: 70,
+      },
+      {
+        name: "GitLab CI/CD",
         percentage: 80,
       },
     ],
@@ -66,7 +153,7 @@ export const categorizedSkills = [
     category: "Other",
     items: [
       {
-        name: "Git / GitHub",
+        name: "Git / GitHub / Bitbucket / Jira",
         percentage: 85,
       },
       {
@@ -78,7 +165,23 @@ export const categorizedSkills = [
         percentage: 80,
       },
       {
-        name: "Testing",
+        name: "PyTest",
+        percentage: 80,
+      },
+      {
+        name: "Agile/Scrum",
+        percentage: 70,
+      },
+      {
+        name: "OAuth",
+        percentage: 75,
+      },
+      {
+        name: " CI/CD",
+        percentage: 60,
+      },
+      {
+        name: "RESTful APIs / GraphQL / gRPC / WebSocket",
         percentage: 70,
       },
     ],
